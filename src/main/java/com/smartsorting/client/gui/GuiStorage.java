@@ -6,7 +6,6 @@ import com.smartsorting.net.PacketHandler;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;
-import net.minecraft.client.resources.language.I18n;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.Slot;
@@ -91,9 +90,6 @@ public class GuiStorage extends net.minecraft.client.gui.screens.inventory.Abstr
     @Override
     protected void renderLabels(GuiGraphics g, int mouseX, int mouseY) {
         g.drawString(font, title, 8, 6, GuiStyle.TEXT, false);
-        if (search.getValue().isEmpty() && !search.isFocused()) {
-            g.drawString(font, I18n.get("smartsorting.gui.search_items"), 13, 19, GuiStyle.MUTED, false);
-        }
         g.drawString(font, playerInventoryTitle, 8, ContainerStorage.PLAYER_Y - 11, GuiStyle.MUTED, false);
     }
 

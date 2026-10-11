@@ -5,7 +5,6 @@ import com.smartsorting.block.MoverSide;
 import com.smartsorting.gui.ContainerMover;
 import com.smartsorting.net.MsgLinkSide;
 import com.smartsorting.net.PacketHandler;
-import com.smartsorting.tile.TileChestMover;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -80,10 +79,5 @@ public class GuiChestMover extends GuiBase<ContainerMover> {
         int cx = GRID_X + CELL_W + GAP;
         int cy = GRID_Y + CELL_H + GAP;
         drawText(g, "↑", cx + 25 - font.width("↑") / 2, cy + 7, GuiStyle.YELLOW);
-        String level = tr("smartsorting.gui.link_level");
-        drawText(g, level, COLUMN_BOX_X + (COLUMN_BOX_W - font.width(level)) / 2, GRID_Y + CELL_H + GAP + 7, GuiStyle.MUTED);
-        float speed = TileChestMover.travelSpeed(menu.getSlot(0).getItem()) * 20;
-        drawText(g, tr("smartsorting.gui.travel", String.format("%.2f", speed).replaceAll("\\.?0+$", "")),
-                ContainerMover.UPGRADE_X + 22, ContainerMover.UPGRADE_Y + 5, GuiStyle.MUTED);
     }
 }

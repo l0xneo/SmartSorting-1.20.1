@@ -176,6 +176,7 @@ public class GuiImporter extends GuiBase<ContainerImporter> {
             allMods.add(new ModEntry(entry.getKey(), names.getOrDefault(entry.getKey(), entry.getKey()), entry.getValue()));
         }
         allMods.sort((a, b) -> a.name.compareToIgnoreCase(b.name));
+        allMods.add(0, new ModEntry(ItemFilter.ALL_MODS, tr("smartsorting.gui.all_items"), ForgeRegistries.ITEMS.getKeys().size()));
     }
 
     private void refilter() {

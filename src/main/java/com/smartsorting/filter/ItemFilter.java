@@ -22,6 +22,7 @@ public class ItemFilter {
     public static final int PAGE_SIZE = 27;
     public static final int PAGES = 10;
     public static final int SLOTS = PAGE_SIZE * PAGES;
+    public static final String ALL_MODS = "*";
 
     private static final Pattern MOD_ID = Pattern.compile("[a-z0-9_.\\-]{1,64}");
 
@@ -69,6 +70,9 @@ public class ItemFilter {
 
     private boolean matches(ItemStack stack) {
         if (method == METHOD_MOD) {
+            if (ALL_MODS.equals(modId)) {
+                return true;
+            }
             ResourceLocation name = ForgeRegistries.ITEMS.getKey(stack.getItem());
             return !modId.isEmpty() && name != null && modId.equals(name.getNamespace());
         }
@@ -125,7 +129,7 @@ public class ItemFilter {
 
     public void setModId(String newModId) {
         String value = newModId == null ? "" : newModId.trim();
-        if ((value.isEmpty() || MOD_ID.matcher(value).matches()) && !value.equals(modId)) {
+        if ((value.isEmpty() || ALL_MODS.equals(value) || MOD_ID.matcher(value).matches()) && !value.equals(modId)) {
             modId = value;
             onChange.run();
         }

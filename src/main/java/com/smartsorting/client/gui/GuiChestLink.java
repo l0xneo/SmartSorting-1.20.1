@@ -90,9 +90,6 @@ public class GuiChestLink extends Screen {
         g.drawString(font, title, left + 10, top + 9, GuiStyle.TEXT, false);
         GuiStyle.inset(g, left + COMPASS_X, top + BOX_Y, COMPASS_W, BOX_H);
         GuiStyle.inset(g, left + COLUMN_BOX_X, top + BOX_Y, COLUMN_BOX_W, BOX_H);
-        String level = I18n.get("smartsorting.gui.link_level");
-        g.drawString(font, level, left + COLUMN_BOX_X + (COLUMN_BOX_W - font.width(level)) / 2,
-                top + GRID_Y + CELL_H + GAP + 7, GuiStyle.MUTED, false);
 
         int cx = left + GRID_X + CELL_W + GAP;
         int cy = top + GRID_Y + CELL_H + GAP;
