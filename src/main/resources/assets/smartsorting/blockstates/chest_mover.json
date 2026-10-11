@@ -1,0 +1,11 @@
+{
+  "multipart": [
+    {"apply": {"model": "smartsorting:block/chest_mover"}},
+    {"when": {"north": "take|give"}, "apply": {"model": "smartsorting:block/chest_mover_arm"}},
+    {"when": {"east": "take|give"}, "apply": {"model": "smartsorting:block/chest_mover_arm", "y": 90}},
+    {"when": {"south": "take|give"}, "apply": {"model": "smartsorting:block/chest_mover_arm", "y": 180}},
+    {"when": {"west": "take|give"}, "apply": {"model": "smartsorting:block/chest_mover_arm", "y": 270}},
+    {"when": {"up": "take|give"}, "apply": {"model": "smartsorting:block/chest_mover_arm", "x": 270}},
+    {"when": {"down": "take|give"}, "apply": {"model": "smartsorting:block/chest_mover_arm", "x": 90}}
+  ]
+}

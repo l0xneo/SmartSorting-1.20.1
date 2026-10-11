@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["GRG", "RPR", "GRG"],
+  "key": {"G": {"tag": "forge:glass"}, "R": {"tag": "forge:dusts/redstone"}, "P": {"item": "smartsorting:pipe"}},
+  "result": {"item": "smartsorting:transit_upgrade", "count": 1}
+}

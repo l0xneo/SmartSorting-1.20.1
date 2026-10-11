@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["IGI"],
+  "key": {"I": {"tag": "forge:ingots/iron"}, "G": {"tag": "forge:glass"}},
+  "result": {"item": "smartsorting:pipe", "count": 8}
+}

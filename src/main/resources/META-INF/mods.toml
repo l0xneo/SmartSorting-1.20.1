@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="See LICENSE"
+
+[[mods]]
+modId="smartsorting"
+version="${file.jarVersion}"
+displayName="Smart Sorting"
+authors="Neo"
+description='''Sorts items from your chests into the right chests through glass pipes and filtered importers, and joins chests into one searchable storage.'''
+
+[[dependencies.smartsorting]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.4,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.smartsorting]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"

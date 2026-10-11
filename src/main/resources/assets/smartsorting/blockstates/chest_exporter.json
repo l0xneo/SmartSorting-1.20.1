@@ -1,0 +1,16 @@
+{
+  "multipart": [
+    {"when": {"facing": "up"}, "apply": {"model": "smartsorting:block/chest_exporter"}},
+    {"when": {"facing": "down"}, "apply": {"model": "smartsorting:block/chest_exporter", "x": 180}},
+    {"when": {"facing": "north"}, "apply": {"model": "smartsorting:block/chest_exporter", "x": 90}},
+    {"when": {"facing": "south"}, "apply": {"model": "smartsorting:block/chest_exporter", "x": 90, "y": 180}},
+    {"when": {"facing": "west"}, "apply": {"model": "smartsorting:block/chest_exporter", "x": 90, "y": 270}},
+    {"when": {"facing": "east"}, "apply": {"model": "smartsorting:block/chest_exporter", "x": 90, "y": 90}},
+    {"when": {"north": "true"}, "apply": {"model": "smartsorting:block/chest_exporter_arm"}},
+    {"when": {"east": "true"}, "apply": {"model": "smartsorting:block/chest_exporter_arm", "y": 90}},
+    {"when": {"south": "true"}, "apply": {"model": "smartsorting:block/chest_exporter_arm", "y": 180}},
+    {"when": {"west": "true"}, "apply": {"model": "smartsorting:block/chest_exporter_arm", "y": 270}},
+    {"when": {"up": "true"}, "apply": {"model": "smartsorting:block/chest_exporter_arm", "x": 270}},
+    {"when": {"down": "true"}, "apply": {"model": "smartsorting:block/chest_exporter_arm", "x": 90}}
+  ]
+}

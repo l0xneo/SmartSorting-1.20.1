@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["GRG", "RSR", "GRG"],
+  "key": {"G": {"tag": "forge:ingots/gold"}, "R": {"tag": "forge:dusts/redstone"}, "S": {"item": "minecraft:sugar"}},
+  "result": {"item": "smartsorting:speed_upgrade", "count": 1}
+}

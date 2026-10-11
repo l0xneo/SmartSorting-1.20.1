@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["IPI", "PCP", "IPI"],
+  "key": {"I": {"tag": "forge:ingots/iron"}, "P": {"item": "smartsorting:pipe"}, "C": {"tag": "forge:chests/wooden"}},
+  "result": {"item": "smartsorting:chest_link", "count": 1}
+}

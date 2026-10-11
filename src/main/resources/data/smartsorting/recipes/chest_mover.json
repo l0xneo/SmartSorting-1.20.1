@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" G ", "PLP", " G "],
+  "key": {"G": {"tag": "forge:glass"}, "P": {"item": "smartsorting:pipe"}, "L": {"item": "smartsorting:chest_link"}},
+  "result": {"item": "smartsorting:chest_mover", "count": 1}
+}

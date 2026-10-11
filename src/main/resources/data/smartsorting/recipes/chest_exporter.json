@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RPR", " H "],
+  "key": {"R": {"tag": "forge:dusts/redstone"}, "P": {"item": "smartsorting:pipe"}, "H": {"item": "minecraft:hopper"}},
+  "result": {"item": "smartsorting:chest_exporter", "count": 1}
+}

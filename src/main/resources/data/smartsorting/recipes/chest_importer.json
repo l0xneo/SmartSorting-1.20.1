@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["IPI", " H "],
+  "key": {"I": {"tag": "forge:ingots/iron"}, "P": {"item": "smartsorting:pipe"}, "H": {"item": "minecraft:hopper"}},
+  "result": {"item": "smartsorting:chest_importer", "count": 1}
+}

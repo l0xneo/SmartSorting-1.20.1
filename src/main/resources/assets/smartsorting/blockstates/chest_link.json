@@ -1,0 +1,11 @@
+{
+  "multipart": [
+    {"apply": {"model": "smartsorting:block/chest_link"}},
+    {"when": {"north": "true"}, "apply": {"model": "smartsorting:block/chest_link_arm"}},
+    {"when": {"east": "true"}, "apply": {"model": "smartsorting:block/chest_link_arm", "y": 90}},
+    {"when": {"south": "true"}, "apply": {"model": "smartsorting:block/chest_link_arm", "y": 180}},
+    {"when": {"west": "true"}, "apply": {"model": "smartsorting:block/chest_link_arm", "y": 270}},
+    {"when": {"up": "true"}, "apply": {"model": "smartsorting:block/chest_link_arm", "x": 270}},
+    {"when": {"down": "true"}, "apply": {"model": "smartsorting:block/chest_link_arm", "x": 90}}
+  ]
+}
